@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #EFEFEF;
+    position: relative;
+}
+
+.event-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.event-info {
+    width: 253px;
+    height: 141px;
+    transform: translateY(-22px);
+    background-color: #fff;
+    box-shadow: 0px 4px 6.6px 0px #00000026;
+    border-radius: 4px 4px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-date {
+    color: black;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.event-time {
+    color: black;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    font-weight: 800;
+}
+
+.price-info {
+    width: 253px;
+    height: 141px;
+    transform: translateY(-22px);
+    background-color: #fff;
+    box-shadow: 0px 4px 6.6px 0px #00000026;
+    border-radius: 4px 4px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-label {
+    color: black;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.price-value {
+    color: #841EBF;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.main-content {
+    padding-top: 70px;
+    padding-bottom: 103px;
+}
+
+.main-hero {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.content-wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.instructor-info {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+.instructor-info .highlight {
+    color: red;
+}
+
+.main-title {
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+    font-weight: 700;
+    line-height: 95%;
+    font-size: 110px;
+    margin-bottom: 44px;
+}
+
+.main-title .highlight {
+    color: #841EBF;
+}
+
+.masterclass-label {
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.benefits-list {
+    list-style: none;
+    max-width: 570px;
+    margin-bottom: 38px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.highlight-income,
+.highlight-skills,
+.highlight-secrets {
+    color: #841EBF;
+}
+
+.cta-button {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    padding: 23px 80px;
+    background-color: #841EBF;
+    box-shadow: 0px 4px 4px 0px #841EBF inset;
+    border-radius: 9999px;
+    text-decoration: none;
+    display: inline-flex;
+    margin-bottom: 18px;
+}
+
+.bonus-section {
+    max-width: 578px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    background-color: #fff;
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+    gap: 21px;
+}
+
+.bonus-icon {
+    width: 85px;
+}
+
+.bonus-text {
+    color: black;
+    font-size: 18px;
+    line-height: 180%;
+}
+
+.bonus-highlight {
+    font-weight: 500;
+}
+
+.mobile-event-header,
+.mobile-main-content {
+    display: none;
+}
+
+.mobile-event-header {
+    padding: 0 17px;
+}
+
+.mobile-event-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 32px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6.6px 0px #00000026;
+    border-radius: 4px 4px 20px 20px;
+    margin-bottom: 36px;
+}
+
+.mobile-event-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.mobile-event-date {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.mobile-event-time {
+    color: black;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.mobile-main-content {
+    text-align: center;
+}
+
+.mobile-content-wrapper {
+    width: 100%;
+    padding: 0 27px;
+}
+
+.mobile-instructor-info {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.mobile-instructor-info .highlight {
+    color: red;
+}
+
+.mobile-main-title {
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+    font-weight: 700;
+    line-height: 95%;
+    font-size: 68px;
+    margin-bottom: 5px;
+}
+
+.mobile-main-title .highlight {
+    color: #841EBF;
+}
+
+.mobile-content-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-hero-image {
+    display: inline-flex;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mobile-cta-button {
+    font-family: "Bebas Neue", sans-serif;
+    padding: 17px 70px;
+    background-color: #841EBF;
+    box-shadow: 0px 4px 4px 0px #841EBF inset;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 9999px;
+    margin-bottom: 11px;
+}
+
+.mobile-bonus-section {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 14px;
+    background-color: #fff;
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.mobile-bonus-text {
+    color: black;
+    font-size: 11px;
+    line-height: 180%;
+}
+
+.mobile-bonus-text .highlight {
+    font-weight: 500;
+}
+
+.mobile-masterclass-title {
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.mobile-benefits-list {
+    list-style: none;
+}
+
+.mobile-benefit-item {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.mobile-benefit-icon {
+    display: flex;
+}
+
+.mobile-benefit-text {
+    color: black;
+    font-size: 13px;
+}
+
+.mobile-benefit-text .highlight {
+    color: #841EBF;
+}
+
+@media (max-width: 1280px) {
+    .main-hero {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .main-title {
+        font-size: 90px;
+        margin-bottom: 32px;
+    }
+
+    .masterclass-label {
+        font-size: 20px;
+    }
+
+    .benefit-item {
+        font-size: 20px;
+    }
+
+    .cta-button {
+        padding: 18px 32px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .main-hero {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .main-title {
+        font-size: 80px;
+        margin-bottom: 32px;
+    }
+
+    .masterclass-label {
+        font-size: 18px;
+    }
+
+    .benefit-item {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 18px 32px;
+        font-size: 35px;
+    }
+
+    .benefit-item span svg {
+        width: 55px;
+    }
+
+    .benefits-list {
+        max-width: 450px;
+    }
+
+    .bonus-text {
+        font-size: 18px;
+    }
+
+    .bonus-section {
+        max-width: 550px;
+        width: 100%;
+    }
+
+    .event-header {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 995px) {
+
+    .main-content,
+    .event-header {
+        display: none;
+    }
+
+    .mobile-event-header,
+    .mobile-main-content {
+        display: block;
+    }
+
+    .mobile-main-content {
+        padding-bottom: 58px;
+    }
+}
+
+@media (max-width: 500px) {
+    .mobile-hero-image {
+        max-width: 280px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 570px) {
+    .mobile-cta-button {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto 11px;
+    }
+
+    .mobile-bonus-section {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto 18px;
+    }
+
+    .mobile-masterclass-info {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
