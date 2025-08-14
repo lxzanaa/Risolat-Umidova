@@ -308,6 +308,7 @@ body {
 .mobile-hero-image {
     display: inline-flex;
     max-width: 404px;
+    height: auto;
     width: 100%;
     margin: 0 auto;
 }
