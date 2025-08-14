@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-16" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obuna Bo'lish</title>
+  <!-- Inline Critical CSS -->
+  <style>
+    .header {
+      padding-top: 180px;
+      min-height: 100vh;
+      background: #efefef url(../images/big-img.png) no-repeat right bottom/contain;
+    }
+
+    .hero-title {
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 700;
+      font-size: 96px;
+      text-align: center;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+
+    .hero-text {
+      font-family: Montserrat, sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      margin-bottom: 58px;
+    }
+
+    .hero-btn {
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 700;
+      font-size: 64px;
+      text-align: center;
+      padding: 39px 0 58px;
+      background: #62333e;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      width: 100%;
+    }
+
+    @media (max-width: 500px) {
+      .header {
+        padding-top: 40px;
+        background-image: none;
+      }
+
+      .hero-title {
+        font-size: 32px;
+        margin-bottom: 5px;
+      }
+
+      .hero-text {
+        font-size: 14px;
+        margin-bottom: 28px;
+        max-width: 307px;
+      }
+
+      .hero-btn {
+        font-size: 36px;
+        padding: 20px 0;
+        margin-bottom: 25px;
+      }
+    }
+  </style>
+  <!-- Async CSS Loading -->
+  <link rel="stylesheet" href="./css/subscribe.css" media="print" onload="this.media='all'" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue" as="style" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- <link rel="preconnect" href="https://connect.facebook.net" /> -->
+  <!-- <link rel="preconnect" href="https://www.facebook.com" /> -->
+</head>
+
+<body>
+  <section class="header">
+    <div class="header-container">
+      <div class="hero-left">
+        <h2 class="hero-title">oxirgi qadam qoldi!</h2>
+        <p class="hero-text">
+          Jonli efirda qatnashish va sirli ma’lumotlarni bilish uchun telegram kanalga <span>obuna bo’ling</span>
+        </p>
+        <div class="hero-btn-box">
+          <img class="hero-img" src="./img/strelka.svg" alt="Arrow icon" />
+        </div>
+        <a href="tg://resolve?domain=AsosIT" class="hero-btn thankYouBtn">Obuna bo’lish</a>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/thankYou.js"></script>
+</body>
+
+</html>

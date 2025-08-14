@@ -1,15 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../font/bebas-neue-bold.woff2);
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../font/Montserrat-Medium.woff2);
+    font-weight: 700;
+    font-display: swap;
+}
+
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #EFEFEF;
     position: relative;
+    min-height: 100vh;
 }
 
 .event-header {
@@ -90,6 +105,10 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+    object-position: bottom;
 }
 
 .content-wrapper {
@@ -165,6 +184,9 @@ body {
     text-decoration: none;
     display: inline-flex;
     margin-bottom: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 .bonus-section {
@@ -259,11 +281,13 @@ body {
     font-weight: 700;
     line-height: 95%;
     font-size: 68px;
+    margin-bottom: 6px;
+
+    span {
+        color: #841EBF;
+    }
 }
 
-.mobile-main-title .highlight {
-    color: #841EBF;
-}
 
 .mobile-content-img {
     display: flex;
@@ -272,12 +296,14 @@ body {
 
 .mobile-hero-image {
     display: inline-flex;
-    max-width: 400px;
+    max-width: 404px;
     width: 100%;
     margin: 0 auto;
 }
 
 .mobile-cta-button {
+    max-width: 345px;
+    width: 100%;
     font-family: "Bebas Neue", sans-serif;
     padding: 17px 20px;
     background-color: #841EBF;
@@ -289,7 +315,8 @@ body {
     outline: none;
     color: white;
     border-radius: 9999px;
-    margin-bottom: 11px;
+    margin: 0 auto 11px;
+    cursor: pointer;
 }
 
 .mobile-bonus-section {
@@ -324,6 +351,9 @@ body {
 
 .mobile-benefits-list {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .mobile-benefit-item {
@@ -331,10 +361,6 @@ body {
     display: flex;
     align-items: center;
     gap: 6px;
-}
-
-.mobile-benefit-icon {
-    display: flex;
 }
 
 .mobile-benefit-text {
@@ -419,6 +445,7 @@ body {
 
 @media (max-width: 995px) {
 
+    .only-desktop,
     .main-content,
     .event-header {
         display: none;
@@ -460,8 +487,33 @@ body {
         margin: 0 auto;
     }
 }
+
 @media (max-width: 439px) {
-    .mobile-main-title{
-        font-size: 58px;
+    .mobile-main-title {
+        font-size: 46px;
+    }
+
+    .mobile-event-date,
+    .mobile-instructor-info {
+        font-size: 12px;
+    }
+
+    .mobile-event-time {
+        font-size: 18px;
+    }
+
+    .mobile-benefits-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mobile-bonus-text {
+        font-size: 10px;
+    }
+
+    .mobile-event-container {
+        padding: 14px 32px;
+        margin-bottom: 15px;
     }
 }
