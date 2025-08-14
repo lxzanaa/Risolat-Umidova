@@ -1,5 +1,5 @@
 const SHEET_URL =
-  'https://script.google.com/macros/s/AKfycbxKnqArOiC2q1BdWL0bU1SssTpjO9YbaUgFPzoXE5lN1FIM63pjlW_Y4nsCo3jjtBfwZA/exec'
+  'https://script.google.com/macros/s/AKfycbzxot7j65mzbHti4ML328Fj0kzF2uv9skWbma1xbD-U4yoaxS1abyTusqjgclX6lLpQ1g/exec'
 
 // ✅ Sana formatlash: 11-08-2025
 function getFormattedDate () {
@@ -49,11 +49,7 @@ async function sendFormData () {
   const formData = new FormData()
   formData.append('Ism', formDataObj.Ism)
   formData.append('Telefon raqam', formDataObj.TelefonRaqam)
-  formData.append('Kirish Sanasi', date)
-  formData.append('Kirish vaqti', time)
-  formData.append('Page', 'c')
-  formData.append('sheetName', 'Registered')
-
+  formData.append("Royhatdan o'tgan vaqti", date)
   try {
     const response = await fetch(SHEET_URL, {
       method: 'POST',
@@ -73,33 +69,3 @@ async function sendFormData () {
 }
 
 window.onload = sendFormData
-
-const thankYouBtn = document.querySelector('.thankYouBtn')
-
-thankYouBtn.addEventListener('click', function () {
-  if (!shouldSendToday('SubBtnSendDate')) {
-    console.log("⏩ Bugun 'Subscribe btn pressed' allaqachon yuborilgan")
-    return
-  }
-
-  const date = getFormattedDate()
-  const time = getFormattedTime()
-
-  const formData = new FormData()
-  formData.append('Kirish Sanasi', date)
-  formData.append('Kirish vaqti', time)
-  formData.append('sheetName', 'Subcribe btn pressed')
-  formData.append('Page', 'c')
-
-  fetch(SHEET_URL, {
-    method: 'POST',
-    body: formData
-  })
-    .then(res => res.text())
-    .then(data => {
-      console.log("✅ Button ma'lumot yuborildi:", data)
-    })
-    .catch(err => {
-      console.error('❌ Xatolik:', err)
-    })
-})
